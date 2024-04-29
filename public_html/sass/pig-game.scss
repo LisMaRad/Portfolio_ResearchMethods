@@ -1,0 +1,183 @@
+#pig-game {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 10em;
+  background-image: linear-gradient(to top left, #753682 0%, #bf2e34 100%);
+  border-radius: 10px;
+
+  h2 {
+    color: $color-white;
+  }
+
+  p {
+    color: $color-white;
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+.player {
+  width: 50%;
+  transition: all 0.75s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.name {
+  font-size: 2.5em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  word-spacing: 2px;
+  font-weight: 700;
+  margin-bottom: 0.25em;
+  margin-top: 4em;
+}
+
+.score {
+  font-size: 6rem;
+  font-weight: 400;
+  margin-bottom: auto;
+}
+
+.current {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #c7365f;
+  margin-top: 4em;
+  margin-bottom: 9em;
+  opacity: 0.8;
+  border-radius: 9px;
+  width: 30%;
+  padding: 1em;
+  text-align: center;
+  transition: all 0.75s;
+  p {
+    font-weight: 400;
+  }
+}
+
+.current-label {
+  text-transform: uppercase;
+  font-size: 1.1em;
+  letter-spacing: 1px;
+  color: #ddd;
+}
+
+.current-score {
+  font-size: 3.5rem;
+}
+
+.btn {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #444;
+  background: none;
+  border: none;
+  font-family: inherit;
+  font-size: 1em;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-weight: 400;
+  transition: all 0.2s;
+
+  background-color: white;
+  background-color: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(10px);
+
+  padding: 0.7rem 2.5rem;
+  border-radius: 50rem;
+  box-shadow: 0 1.75rem 3.5rem rgba(0, 0, 0, 0.1);
+}
+
+.dice {
+  position: absolute;
+  height: 100px;
+  top: 15em;
+  left: 50%;
+  transform: translateX(-50%);
+  box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.2);
+}
+
+.player--active {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+.player--active .name {
+  font-weight: 700;
+}
+.player--active .score {
+  font-weight: 400;
+}
+
+.player--active .current {
+  opacity: 1;
+}
+
+.btn--new {
+  top: 4rem;
+}
+.btn--roll {
+  bottom: 15em;
+}
+.btn--hold {
+  bottom: 10em;
+}
+
+.btn:active {
+  transform: translate(-50%, 3px);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+}
+
+.player--winner {
+  background-color: #2f2f2f;
+}
+
+@include Mobile {
+  #pig-game {
+    margin-left: 0;
+    margin-right: 0;
+    border-radius: 0;
+  }
+  .name {
+    font-size: 1.5em;
+  }
+
+  .btn--new {
+    width: 50vw;
+    top: 2rem;
+  }
+
+  .score {
+    font-size: 5em;
+  }
+
+  .player {
+    padding-top: 2em;
+  }
+
+  .current {
+    width: 60%;
+    margin-top: 2em;
+    margin-bottom: 12em;
+  }
+
+  .btn--roll {
+    bottom: 6em;
+    width: 50vw;
+  }
+  .btn--hold {
+    bottom: 2em;
+    width: 50vw;
+  }
+
+  .dice {
+    height: 75px;
+    top: 12em;
+  }
+}

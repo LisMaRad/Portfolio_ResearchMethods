@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="sass/style.css">
+    <title>santnerin - pig game</title>
+    <meta property="og:description" content="I'm Tanja, web developer and graduated media designer for print and web.">
+    <meta property="og:url" content="https://www.santnerin.com/pig-game.html">
+    <meta property="og:image" content="https://www.santnerin.com/images/og/og-image.jpg">
+    <meta property="og:title" content="santnerin - pig game">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+</head>
+
+<body>
+    <header>
+        <nav class="header-item-1">
+            <a href="index.html"><img src="images/logo-santnerin.svg" alt="logo santnerin" class="logo"></a>
+            <button class="hamburger hamburger--collapse" type="button">
+                <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                </span>
+            </button>
+            <ul class="navbar" id="navigation">
+                <li id="mobile-nav-home" class="hidden"><a href="index.html">Home</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="header-item-2">
+            <h1>The Pig Game</h1>
+            <h2>Challenge your friends</h2>
+        </div>
+        <a class="header-item-3" href="#pig-game-info"><img class="scroll" src="images/icons/scroll.svg"
+                alt="arrow for scrolling"></a>
+    </header>
+    <main>
+        <section class="main-container" id="pig-game-info">
+            <h2>Information</h2>
+            <h3>Project</h3>
+            <div class="tags">
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                </ul>
+            </div>
+            <p>The Pig Game is a fun and simple dice game. Two players compete against each other and the first, who
+                reaches <strong>100 points</strong> wins. On each turn the player can roll the dice as many times as he
+                wants.</p>
+            <p><strong>But beware:</strong> If you roll a 1, you don't get any points and it's the next player's turn.
+            </p>
+
+            <p>The value of the roll is added to a <strong>turn total</strong>. If
+                you decide to keep your turn total, your turn total is added to your score.</p>
+
+            <div class="hint">
+                <img src="images/icons/information.svg" alt="information icon">
+                <p>
+                    This project was built by following the online course <a
+                        href="https://www.udemy.com/course/the-complete-javascript-course" target="_blank"><strong>"The
+                            Complete JavaScript Course 2021:
+                            From Zero to Expert!" by Jonas Schmedtmann</strong></a>.
+                    I modified the design a little bit and added the JavaScript parts.
+                </p>
+            </div>
+        </section>
+        <div id="pig-game" class="wide-container">
+            <section class="player player--0 player--active">
+                <h2 class="name" id="name--0">Player 1</h2>
+                <p class="score" id="score--0">43</p>
+                <div class="current">
+                    <p class="current-label">Current</p>
+                    <p class="current-score" id="current--0">0</p>
+                </div>
+            </section>
+            <section class="player player--1">
+                <h2 class="name" id="name--1">Player 2</h2>
+                <p class="score" id="score--1">24</p>
+                <div class="current">
+                    <p class="current-label">Current</p>
+                    <p class="current-score" id="current--1">0</p>
+                </div>
+            </section>
+
+            <img src="images/pig-game/dice-5.png" alt="Playing dice" class="dice" />
+            <button class="btn btn--new">🔄 New game</button>
+            <button class="btn btn--roll">🎲 Roll dice</button>
+            <button class="btn btn--hold">📥 Hold</button>
+        </div>
+    </main>
+    <div class="scroll-to-top">
+        <img src="images/icons/arrow-top.svg" alt="scroll to top">
+    </div>
+    <footer>
+        <div class="flex-footer">
+            <div class="footer-logo-container">
+                <a href="index.html"><img src="images/logo-santnerin.svg" alt="logo santnerin" class="logo"></a>
+            </div>
+            <div class="footer-icons">
+                <a href="mailto:santner_tanja@gmx.at"><img src="images/icons/mail-white.svg" alt="mail"></a>
+                <a href="https://www.facebook.com/tanja.santner" target="_blank"><img
+                        src="images/icons/facebook-white.svg" alt="facebook"></a>
+                <a href="https://www.instagram.com/santnerin/" target="_blank"><img
+                        src="images/icons/instagram-white.svg" alt="instagram"></a>
+                <a href="https://www.linkedin.com/in/tanja-santner-77a414226/" target="_blank"><img
+                        src="images/icons/linkedin-white.svg" alt="linkedin"></a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="contact.html">Contact</a> | <a href="imprint.html">Imprint</a></li>
+                </ul>
+            </nav>
+        </div>
+        <p class="copy">&copy; 2021 Tanja Santner | All rights reserved.</p>
+    </footer>
+    <script src="pig-game.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

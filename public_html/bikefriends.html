@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="sass/style.css">
+    <title>santnerin - Bike Friends Salzburg</title>
+    <meta property="og:description" content="I'm Tanja, web developer and graduated media designer for print and web.">
+    <meta property="og:url" content="https://www.santnerin.com/bikefriends.html">
+    <meta property="og:image" content="https://www.santnerin.com/images/og/og-image.jpg">
+    <meta property="og:title" content="santnerin - bikefriends">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+</head>
+
+<body>
+    <header>
+        <nav class="header-item-1">
+            <a href="index.html"><img src="images/logo-santnerin.svg" alt="logo santnerin" class="logo"></a>
+            <button class="hamburger hamburger--collapse" type="button">
+                <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                </span>
+            </button>
+            <ul class="navbar" id="navigation">
+                <li id="mobile-nav-home" class="hidden"><a href="index.html">Home</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="header-item-2">
+            <h1>Bike Friends<br> Salz&shy;burg</h1>
+            <h2>Online Shop</h2>
+        </div>
+        <a class="header-item-3" href="#bikefriends-info"><img class="scroll" src="images/icons/scroll.svg"
+                alt="arrow for scrolling"></a>
+    </header>
+    <main>
+        <section class="main-container" id="bikefriends-info">
+            <h2>Information</h2>
+            <h3>Project</h3>
+            <div class="tags">
+                <ul>
+                    <li>Webdesign</li>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>Ruby on Rails</li>
+                    <li>PostgreSQL</li>
+                </ul>
+            </div>
+            <p><a href="https://bikefriends.at/" target="_blank">Bike Friends Salzburg</a> is a registered cycling club
+                and has about 115 members, who have a passion for mountain biking and road biking. An online shop was
+                created to make ordering equipment (team jerseys, bottles, ...) as easy as possible.
+            <p>
+                <strong>Problem:</strong> Manufacturer of the items only produces when a required quantity is reached.
+            </p>
+
+            <p>
+                <strong>Solution: </strong>The members' orders are stored in the background and when the required
+                quantity is reached, the club
+                chairman receives a list of the ordered items by e-mail. After that the club chairman is responsible for
+                the order processing and has to send the order list to the manufacturer.
+            </p>
+            <p>So from the members' point of view the application is an <strong>online shop</strong> and from the club
+                chairman's point
+                of view it is an <strong>organization tool</strong>.</p>
+            <p>A few examples of features that have been implemented:</p>
+            <ol>
+                <li>products can be added or edited</li>
+                <li>manufacturers can be added or edited</li>
+                <li>collective orders can be closed for further orders</li>
+                <li>invoices or orders are available as PDF download</li>
+                <li>overview of invoices with possibility to mark as paid</li>
+                <li>order process: select article, put in shopping cart, order</li>
+                <li>search and filter options</li>
+            </ol>
+
+            <div class="hint">
+                <img src="images/icons/information.svg" alt="information icon">
+                <p>
+                    This project was created together with my colleague <a href="https://juliane.dev/portfolio"
+                        target="_blank">Juliane Mohr</a> during our <strong>MultiMediaTechnology course (3rd
+                        semester)</strong> at the
+                    University of Applied Sciences Salzburg.
+                </p>
+            </div>
+        </section>
+        <section class="gallery wide-container margin-top">
+            <img class="item-1" src="images/bikefriends/bikefriends-1.png" alt="mockup bikefriends">
+            <img class="item-2" src="images/bikefriends/bikefriends-2.png" alt="mockup bikefriends">
+            <img class="item-3" src="images/bikefriends/bikefriends-3.png" alt="mockup bikefriends">
+        </section>
+    </main>
+    <div class="scroll-to-top">
+        <img src="images/icons/arrow-top.svg" alt="scroll to top">
+    </div>
+    <footer>
+        <div class="flex-footer">
+            <div class="footer-logo-container">
+                <a href="index.html"><img src="images/logo-santnerin.svg" alt="logo santnerin" class="logo"></a>
+            </div>
+            <div class="footer-icons">
+                <a href="mailto:santner_tanja@gmx.at"><img src="images/icons/mail-white.svg" alt="mail"></a>
+                <a href="https://www.facebook.com/tanja.santner" target="_blank"><img
+                        src="images/icons/facebook-white.svg" alt="facebook"></a>
+                <a href="https://www.instagram.com/santnerin/" target="_blank"><img
+                        src="images/icons/instagram-white.svg" alt="instagram"></a>
+                <a href="https://www.linkedin.com/in/tanja-santner-77a414226/" target="_blank"><img
+                        src="images/icons/linkedin-white.svg" alt="linkedin"></a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="contact.html">Contact</a> | <a href="imprint.html">Imprint</a></li>
+                </ul>
+            </nav>
+        </div>
+        <p class="copy">&copy; 2023 Tanja Santner | All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

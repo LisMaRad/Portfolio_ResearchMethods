@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="sass/style.css">
+    <title>santnerin - guess my number</title>
+    <meta property="og:description" content="I'm Tanja, web developer and graduated media designer for print and web.">
+    <meta property="og:url" content="https://www.santnerin.com/guess-my-number.html">
+    <meta property="og:image" content="https://www.santnerin.com/images/og/og-image.jpg">
+    <meta property="og:title" content="santnerin - guess my number">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+</head>
+
+<body>
+    <header>
+        <nav class="header-item-1">
+            <a href="index.html"><img src="images/logo-santnerin.svg" alt="logo santnerin" class="logo"></a>
+            <button class="hamburger hamburger--collapse" type="button">
+                <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                </span>
+            </button>
+            <ul class="navbar" id="navigation">
+                <li id="mobile-nav-home" class="hidden"><a href="index.html">Home</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="header-item-2">
+            <h1>Guess My Number</h1>
+            <h2>What's your highscore?</h2>
+        </div>
+        <a class="header-item-3" href="#number-info"><img class="scroll" src="images/icons/scroll.svg"
+                alt="arrow for scrolling"></a>
+    </header>
+    <main>
+        <section class="main-container" id="number-info">
+            <h2>Information</h2>
+            <h3>Project</h3>
+            <div class="tags">
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                </ul>
+            </div>
+            <p>Guess my number is a simple game. You have to guess a number between <strong>1 and 20</strong>. After
+                each guess you get a hint if the number is <strong>too high</strong>, <strong>too low</strong> or
+                <strong>correct</strong>.</p>
+
+            <p>Your score starts at 20 and <strong>decreases</strong> each time you guess wrong. When your score is 0,
+                the game is over.
+            </p>
+
+            <div class="hint">
+                <img src="images/icons/information.svg" alt="information icon">
+                <p>
+                    This project was built by following the online course <a
+                        href="https://www.udemy.com/course/the-complete-javascript-course" target="_blank"><strong>"The
+                            Complete JavaScript Course 2021:
+                            From Zero to Expert!" by Jonas Schmedtmann</strong></a>.
+                    I modified the design a little bit and added the JavaScript parts.
+                </p>
+            </div>
+        </section>
+        <div id="guess-my-number" class="wide-container">
+            <section class="top">
+                <h2>Guess My Number!</h2>
+                <p class="between">ℹ️ (Between 1 and 20)</p>
+                <div class="number">?</div>
+            </section>
+            <section class="middle">
+                <p class="message">Start guessing...</p>
+                <p class="label-score">💯 Score: <span class="score">20</span></p>
+                <p class="label-highscore">
+                    🥇 Highscore: <span class="highscore">0</span>
+                </p>
+            </section>
+            <section class="bottom">
+                <input type="number" class="guess" />
+                <button class="btn check">🧐 Check!</button>
+                <button class="btn again">▶️ Play again!</button>
+
+            </section>
+
+        </div>
+    </main>
+    <div class="scroll-to-top">
+        <img src="images/icons/arrow-top.svg" alt="scroll to top">
+    </div>
+    <footer>
+        <div class="flex-footer">
+            <div class="footer-logo-container">
+                <a href="index.html"><img src="images/logo-santnerin.svg" alt="logo santnerin" class="logo"></a>
+            </div>
+            <div class="footer-icons">
+                <a href="mailto:santner_tanja@gmx.at"><img src="images/icons/mail-white.svg" alt="mail"></a>
+                <a href="https://www.facebook.com/tanja.santner" target="_blank"><img
+                        src="images/icons/facebook-white.svg" alt="facebook"></a>
+                <a href="https://www.instagram.com/santnerin/" target="_blank"><img
+                        src="images/icons/instagram-white.svg" alt="instagram"></a>
+                <a href="https://www.linkedin.com/in/tanja-santner-77a414226/" target="_blank"><img
+                        src="images/icons/linkedin-white.svg" alt="linkedin"></a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="contact.html">Contact</a> | <a href="imprint.html">Imprint</a></li>
+                </ul>
+            </nav>
+        </div>
+        <p class="copy">&copy; 2021 Tanja Santner | All rights reserved.</p>
+    </footer>
+    <script src="guess-my-number.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
